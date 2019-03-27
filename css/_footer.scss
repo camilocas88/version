@@ -24,6 +24,8 @@
 
     a{
       color: white;
+      font-size: 13px;
+
     }
 
     ul{
@@ -39,12 +41,12 @@
       
       h3 {
         grid-column: 1 / -1;
-        margin: 33px;
+        margin: 12px;
         padding: 0;
       }
       li{
         grid-column: 1 / -1;
-        grid-row: 1/1;
+        // grid-row: 1/1;
       }
     }
   }

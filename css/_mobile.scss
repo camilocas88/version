@@ -2,10 +2,6 @@
 @media screen and (max-width: 457px) {
   header {
 
-     
-         height: 20vh;
-     
-
       img.licorera_logo{
         width: 139px;
       }
@@ -16,7 +12,6 @@
       }
       .menu{
         position: relative;
-        top: 13px;
 
           .menu-left{
             li.open-slide{
@@ -42,12 +37,8 @@
           }
       }
   }
-  .banner{
-      height: 55vh;
-  }
-  .banner_bottom{
-      height: 28vh;
-  }
+  
+  
 }
 
 @media only screen and (max-width: 799px) {
@@ -62,7 +53,6 @@
 
     header{
         padding: 0;
-        height: 20vh;
 
         .side-nav{
             width: 66vw;
@@ -207,15 +197,7 @@
         }
     }
 
-    .banner{
-        height: 60vh;
-    }
-    .banner_bottom{
-        height: 17vh;
-    }   
-
     header{
-        height: 20vh;
         padding: 0 3px;
 
         a.list.--right{
@@ -304,7 +286,7 @@
     }
 }
 
-@media only screen and (min-width : 1025px) and (max-width : 1867px){
+@media only screen and (min-width : 1025px) and (max-width : 1869px){
         .licorera_logo{
             margin: 2px 0;
             width: 195px;
@@ -320,14 +302,12 @@
         div.middle{
             display: none;
         }
-        .bgnav_space{
-            width: 22   0px;
-          }
+        
 }   
 
 @media only screen and (min-width : 1870px) and (max-width : 2560px){
     header{
-        height: 9vmax;
+        // height: 9vmax;
 
         .bgnav .bgnav_space{
             width: 20.5vw;
@@ -362,9 +342,9 @@
                }
             
             img.licorera_logo{
-                left: 5vw;
-                width: 14vmax;
+                left: 6vw;
                 top: 10px;
+                // width: 18vw;
             }
 
             .menu-left{
@@ -373,20 +353,11 @@
             }
         }
     }
-
-    .banner{
-        height: 73vh;
-    }
-
-    .side-nav .location .location-block .line-btn {
-        width: 21.2vmax;
-    }
-
     .side-nav{
         .side-menu__login{
-            margin-top: 1.4vh;
+            
             padding-left: 2.5vw;
-
+            padding-top: 6vh;
            
             .fal{
                 left: -1vw;
@@ -396,6 +367,15 @@
             li{
                 padding-right: 12px;
             }
+            
         }
+
+        a:not(.btn-close):not(.btn_menu){
+            padding-left: 4vw;
+        }
+    }
+
+    #fmobile{
+        display: none;
     }
 }   

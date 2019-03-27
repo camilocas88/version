@@ -1,6 +1,6 @@
 header {
     background: white;
-    height: 22vh;
+    
 
     
     a{
@@ -62,7 +62,7 @@ header {
           }
       }
     .bgnav_space{
-      width: 47vh;    
+      width: 21vw;    
     }
       .bgnav_span{ 
         border: 1px solid white;
@@ -78,12 +78,13 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0 1.5rem;
+        height: 76%;
         
         
 
         .licorera_logo{
           position: relative;
-          // display: flex;
+          width: 17vmax;
           left: 103px;
           margin: 5px 0;
         }
@@ -182,8 +183,8 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #303030;
-    opacity: 0.9;
+    background-color: rgba(44, 44, 45, 0.9);
+    // opacity: 0.9;
     overflow-y: auto;
     display: none;
     @include easeOut;
@@ -296,19 +297,31 @@ header {
         
     }
 
-    
+    li.side-menu-ul{
+      margin-top: 4vh;
+    }
+    .content_menu{
+      min-height: calc(85vh - 114px);
+    }
 
     .side-menu__login{
       display: flex;
       justify-content: space-between;
       padding-right: 1vw;
-      padding-top: 20px;
+      padding-top: 4vh;
+
+      
+      
+
+      
 
       li{
           color: white;
           font-size: 1em;
           position: relative;
           top: 4px;
+
+          
       }
 
       .bar{
@@ -343,13 +356,31 @@ header {
 
     
 
-    .side-menu__bottom {
+    .side-menu_bottom {
       display: flex;
-      position: static;
-      bottom: 65px;
+      // position: absolute;
+      // bottom: 33px;
       border-top: 0.5px solid white;
-      margin-top: 240px;
       width: 100%;
+      height: 40px;
+
+      .bar_li{
+        content: '';
+        position: relative;
+        width: 1px;
+        height: 32px;
+        top: 10px;
+        background: white;
+      }
+
+      .menu_bottom--li{
+        width: 12vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+      }
 
       a, i{
         display: flex;

@@ -86,7 +86,7 @@
                 <li>Bienvenido <br>Ingresa a tu Cuenta Cerrar Cesion</li>
             </ul>
 
-            <ul>
+            <ul class="content_menu">
                 <!-- ariculos -->
                 <li class="side-menu-ul"><a class="line_buttom" href="#"><i class="fal fa-list-ul"></i> Productos <i class="fal fa-chevron-down"></i></a>
                     <ul class="products">
@@ -118,9 +118,10 @@
                 <li><a class="line_buttom" href="#"><i class="fal fa-envelope"></i> Contacto <i class="fal fa-chevron-right"></i> </a></li>
             </ul>
 
-            <ul class="side-menu__bottom">
-                <li><a href="#"><i class="fal fa-question-circle fa-2x"></i> Preguntas Frecuentes</a></li>
-                <li><a href="#"><i class="fal fa-address-card fa-2x"></i> Políticas</a></li>
+            <ul class="side-menu_bottom">
+                <li class="menu_bottom--li"><a href="#"><i class="fal fa-question-circle"></i> Preguntas Frecuentes</a></li>
+                <li class="bar_li "><div class="bar"></div></li> 
+                <li class="menu_bottom--li"><a href="#"><i class="fal fa-address-card"></i> Políticas</a></li>
             </ul>
         </div>
     </header>
@@ -189,13 +190,7 @@
             </ul>
             <div class="social-networks">
                 <h3>CONTACTO</h3>
-                <!-- <li><a href="#">Formulario  </a></li> -->
-                <!-- <div class="text-input">
-                <form action="post">
-                    <input type="email" name="Enter Your Email Address" size="20">
-                    <input type="submit" value="Submit">
-                </form>
-                </div> -->
+                <li><a href="#">Formulario de contacto</a></li>
                 <div class="facebook">
                     <i class="fab fa-facebook fa-2x"></i>
                 </div>
