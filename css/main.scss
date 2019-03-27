@@ -1,0 +1,61 @@
+@import 'config';
+@import 'fonts';
+@import 'loader';
+@import 'header';
+@import 'footer';
+@import 'login';
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-family: Source Sans Pro, sans-serif;
+    height: 100%;
+    margin: 0;
+    background:$back-color;
+    position: static;
+    grid-template-rows: auto 1fr auto;
+}
+li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+
+  }
+
+  ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: Source Sans Pro;
+  font-weight: bold;
+  margin: 0;
+}
+
+.banner{
+    height: 65vh;
+    img{
+      height: 100%;
+    }
+}
+
+.banner_bottom{
+    height: 15vh;
+}
+main{
+  padding-bottom: 1rem;
+  min-height: calc(100% - 20%);
+  margin: 0 auto -50px;
+}
+
+
+
+
+@import 'mobile';
+
+
+

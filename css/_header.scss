@@ -1,0 +1,362 @@
+header {
+    background: white;
+    height: 22vh;
+
+    
+    a{
+      color:$primary-color;
+    }
+
+    
+
+    .menu-btn{
+      position: relative;
+      left: 2px;
+      top: 4px;
+      cursor: pointer;
+      @include easeOut;
+
+      .btn-line{
+        width: 28px;
+        height: 1.5px;
+        margin: 0 0 6px 0;
+        background: $primary-color;
+        @include easeOut;
+
+        &.side{
+          background: white;
+        }
+
+        &:last-child{
+          width: 20px
+        }
+      }
+    }
+
+
+
+    .bgnav {
+      background-color: #888888;
+      display: flex;
+      justify-content: space-between; 
+      height: 36px;
+      width: 100%;
+    
+      a, i{ 
+          color: white;
+          font-size: 1.1rem;
+          margin: 0;
+          letter-spacing: 2px;
+          margin-top: 4px;
+          
+
+          .fal{
+            font-size: 1rem;
+            margin-right: 5px;
+          }
+    
+          .fa-whatsapp{
+            color: #4FCE5D;
+            font-size: 1rem;
+            margin-right: 5px;
+          }
+      }
+    .bgnav_space{
+      width: 47vh;    
+    }
+      .bgnav_span{ 
+        border: 1px solid white;
+        color: #888888;
+        position: relative;
+        top: 2px;
+        font-size: x-large;
+          
+      }
+    }
+    .menu{      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        
+        
+
+        .licorera_logo{
+          position: relative;
+          // display: flex;
+          left: 103px;
+          margin: 5px 0;
+        }
+
+        .menu-left li:last-child {
+            display: none;
+        }
+
+        .menu-left{
+          position: relative;
+          top: -10px;
+
+          .open-slide{
+            position: relative;
+            top: 21px;
+            margin-right: 10px;
+            
+            
+
+            .menu_title{
+              // display: flex;
+              font-size: 15px;
+              position: absolute;
+              top: 25px;
+              left: 0px;
+            }
+          }
+        }
+
+        
+        .menu-right{
+          .fal{
+            margin-left: 10px;
+          }
+          .menu_title--right{
+            display: none;
+          }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+
+            a{
+                font-size: 16px ;
+            }
+
+            li{
+                display: inline-block;
+                padding: 0 5px;
+            }
+
+            .fal{
+              font-size: 22px;
+              position: relative;
+              top: 4px;
+            }
+
+            ._user{
+                position: relative;
+                margin-left: 10px;
+            }
+
+            .bar{
+              content: '';
+              position: relative;
+              width: .6px;
+              height: 18px;
+              top: 4px;
+              background-color: $primary-color;
+            }
+    }
+
+    
+}
+    
+
+    
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.side-nav{
+    height: 100%;
+    width: 25vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #303030;
+    opacity: 0.9;
+    overflow-y: auto;
+    display: none;
+    @include easeOut;
+    
+
+    .side-menu-ul ul{ 
+      display: none;
+      @include easeOut;
+    }
+    
+
+    
+
+    ul{
+        padding: 0;
+        margin: 0;
+
+        &.products{
+          padding: 0 1em;
+        }
+    }
+    .middle_hr{
+      width: 85%;
+    }
+
+    a{
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 1em;
+        color: #ccc;
+        display: block;
+        @include easeOut;
+
+        &.--btn{
+          border:  none;
+        }
+
+        .fa-chevron-right, .fa-chevron-down, .fa-chevron-up{
+          position: relative;
+          float: right;
+          right: 20px;
+        }
+
+        &.line_buttom{
+          border-bottom: .5px solid gray;
+        }
+
+        
+
+        &:not(.btn-close):not(.btn_menu){
+          // border-bottom: .5px solid;
+          height: 18px;
+          padding-left: 2vw;
+        }
+        
+        &.list{
+            border: none;
+            font-size: 0.8rem;
+            padding: 2px 40px;
+            text-decoration: underline;
+
+            &.--right{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+        
+        &:hover{
+          color: white;
+        }
+    }
+
+    .location{
+       li {
+          background: $primary-color;
+          position: relative;
+          top: 0px;
+        }
+
+        
+
+        ul a{
+          font-size: 1.1em;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          &.-last{
+            border-bottom: 0;
+          }
+         
+
+          &.-first{
+            border: none;
+
+            
+          }
+        }
+        .location-block{
+          position: relative;
+          right: 50px;
+
+          .line-btn{
+            border-bottom: solid 1px gray;
+            width: 70%;
+            position: relative;
+            left: 84px;
+          }
+        }
+        
+    }
+
+    
+
+    .side-menu__login{
+      display: flex;
+      justify-content: space-between;
+      padding-right: 1vw;
+      padding-top: 20px;
+
+      li{
+          color: white;
+          font-size: 1em;
+          position: relative;
+          top: 4px;
+      }
+
+      .bar{
+        content: '';
+        position: relative;
+        width: 1.6px;
+        height: 18px;
+        top: 15px;
+        left: 11px;
+        background-color:white;
+      }
+      
+      .menu_title{
+        position: relative;
+        
+        
+      }
+      .fal{
+        position: relative;
+        left: -7px;
+        font-size: 2em;
+      }
+
+
+    }
+    
+    .btn-close{
+      font-size: 12px;
+      position: relative;
+      left: 9px;
+    }
+
+    
+
+    .side-menu__bottom {
+      display: flex;
+      position: static;
+      bottom: 65px;
+      border-top: 0.5px solid white;
+      margin-top: 240px;
+      width: 100%;
+
+      a, i{
+        display: flex;
+        border-bottom: 0;
+        padding: 3px;
+        // align-items: center;
+        justify-content: space-around;
+      }
+    }
+}

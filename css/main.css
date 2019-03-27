@@ -1,0 +1,1272 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("fonts/Oswald-Light.eot");
+  src: local("../fonts/Oswald Light"), local("Oswald-Light"), url("../fonts/Oswald-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  src: url("../fonts/FrankRuhlLibre-Regular.eot");
+  src: local("../fonts/Frank Ruhl Libre Regular"), local("FrankRuhlLibre-Regular"), url("../fonts/FrankRuhlLibre-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FrankRuhlLibre-Regular.woff2") format("woff2"), url("../fonts/FrankRuhlLibre-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  src: url("../fonts/FrankRuhlLibre-Bold.eot");
+  src: local("../fonts/Frank Ruhl Libre Bold"), local("FrankRuhlLibre-Bold"), url("../fonts/FrankRuhlLibre-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FrankRuhlLibre-Bold.woff2") format("woff2"), url("../fonts/FrankRuhlLibre-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("fonts/SourceSansPro-Regular.eot");
+  src: local("fonts/Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Regular.woff2") format("woff2"), url("SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '../fonts/Oswald';
+  src: url("../fonts/Oswald-Medium.eot");
+  src: local("../fonts/Oswald Medium"), local("Oswald-Medium"), url("../fonts/Oswald-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.loader .load {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader.hidden {
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+header {
+  background: white;
+  height: 22vh;
+}
+
+header a {
+  color: #223A6F;
+}
+
+header .menu-btn {
+  position: relative;
+  left: 2px;
+  top: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header .menu-btn .btn-line {
+  width: 28px;
+  height: 1.5px;
+  margin: 0 0 6px 0;
+  background: #223A6F;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header .menu-btn .btn-line.side {
+  background: white;
+}
+
+header .menu-btn .btn-line:last-child {
+  width: 20px;
+}
+
+header .bgnav {
+  background-color: #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 36px;
+  width: 100%;
+}
+
+header .bgnav a, header .bgnav i {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+header .bgnav a .fal, header .bgnav i .fal {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+header .bgnav a .fa-whatsapp, header .bgnav i .fa-whatsapp {
+  color: #4FCE5D;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+header .bgnav .bgnav_space {
+  width: 47vh;
+}
+
+header .bgnav .bgnav_span {
+  border: 1px solid white;
+  color: #888888;
+  position: relative;
+  top: 2px;
+  font-size: x-large;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+}
+
+header .menu .licorera_logo {
+  position: relative;
+  left: 103px;
+  margin: 5px 0;
+}
+
+header .menu .menu-left li:last-child {
+  display: none;
+}
+
+header .menu .menu-left {
+  position: relative;
+  top: -10px;
+}
+
+header .menu .menu-left .open-slide {
+  position: relative;
+  top: 21px;
+  margin-right: 10px;
+}
+
+header .menu .menu-left .open-slide .menu_title {
+  font-size: 15px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+header .menu .menu-right .fal {
+  margin-left: 10px;
+}
+
+header .menu .menu-right .menu_title--right {
+  display: none;
+}
+
+header .menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+header .menu ul a {
+  font-size: 16px;
+}
+
+header .menu ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+header .menu ul .fal {
+  font-size: 22px;
+  position: relative;
+  top: 4px;
+}
+
+header .menu ul ._user {
+  position: relative;
+  margin-left: 10px;
+}
+
+header .menu ul .bar {
+  content: '';
+  position: relative;
+  width: .6px;
+  height: 18px;
+  top: 4px;
+  background-color: #223A6F;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.side-nav {
+  height: 100%;
+  width: 25vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #303030;
+  opacity: 0.9;
+  overflow-y: auto;
+  display: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.side-nav .side-menu-ul ul {
+  display: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.side-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav ul.products {
+  padding: 0 1em;
+}
+
+.side-nav .middle_hr {
+  width: 85%;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #ccc;
+  display: block;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.side-nav a.--btn {
+  border: none;
+}
+
+.side-nav a .fa-chevron-right, .side-nav a .fa-chevron-down, .side-nav a .fa-chevron-up {
+  position: relative;
+  float: right;
+  right: 20px;
+}
+
+.side-nav a.line_buttom {
+  border-bottom: .5px solid gray;
+}
+
+.side-nav a:not(.btn-close):not(.btn_menu) {
+  height: 18px;
+  padding-left: 2vw;
+}
+
+.side-nav a.list {
+  border: none;
+  font-size: 0.8rem;
+  padding: 2px 40px;
+  text-decoration: underline;
+}
+
+.side-nav a.list.--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.side-nav a:hover {
+  color: white;
+}
+
+.side-nav .location li {
+  background: #223A6F;
+  position: relative;
+  top: 0px;
+}
+
+.side-nav .location ul a {
+  font-size: 1.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.side-nav .location ul a.-last {
+  border-bottom: 0;
+}
+
+.side-nav .location ul a.-first {
+  border: none;
+}
+
+.side-nav .location .location-block {
+  position: relative;
+  right: 50px;
+}
+
+.side-nav .location .location-block .line-btn {
+  border-bottom: solid 1px gray;
+  width: 70%;
+  position: relative;
+  left: 84px;
+}
+
+.side-nav .side-menu__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1vw;
+  padding-top: 20px;
+}
+
+.side-nav .side-menu__login li {
+  color: white;
+  font-size: 1em;
+  position: relative;
+  top: 4px;
+}
+
+.side-nav .side-menu__login .bar {
+  content: '';
+  position: relative;
+  width: 1.6px;
+  height: 18px;
+  top: 15px;
+  left: 11px;
+  background-color: white;
+}
+
+.side-nav .side-menu__login .menu_title {
+  position: relative;
+}
+
+.side-nav .side-menu__login .fal {
+  position: relative;
+  left: -7px;
+  font-size: 2em;
+}
+
+.side-nav .btn-close {
+  font-size: 12px;
+  position: relative;
+  left: 9px;
+}
+
+.side-nav .side-menu__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  bottom: 65px;
+  border-top: 0.5px solid white;
+  margin-top: 240px;
+  width: 100%;
+}
+
+.side-nav .side-menu__bottom a, .side-nav .side-menu__bottom i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0;
+  padding: 3px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer {
+  color: white;
+  background: #223A6F;
+  padding: 1em 1em;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7vw 1fr 7vw;
+      grid-template-columns: 7vw 1fr 7vw;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.footer-container {
+  padding: 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  display: -ms-grid;
+  display: grid;
+  /* ACTING AS A GRID CONTAINER */
+  -ms-grid-columns: 2fr 2fr 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "navigation secondary " "contact contact social";
+}
+
+.footer-container a {
+  color: white;
+}
+
+.footer-container ul {
+  padding: 0 2em;
+}
+
+.footer-container .social-networks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.footer-container .social-networks h3 {
+  grid-column: 1 / -1;
+  margin: 33px;
+  padding: 0;
+}
+
+.footer-container .social-networks li {
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.bottom-line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7vw 8fr 4fr 7vw;
+      grid-template-columns: 7vw 8fr 4fr 7vw;
+}
+
+.bottom-line p {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.bottom-line, .bottom-line a {
+  color: #223A6F;
+}
+
+.bottom-line .legal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+}
+
+#fmobile {
+  background: #223A6F;
+  color: white;
+  width: 100%;
+  min-width: 300px;
+  margin: 0;
+}
+
+.menu-footer {
+  width: 100%;
+  padding: 0;
+}
+
+.menu-footer ul {
+  display: none;
+  background: white;
+  color: #223A6F;
+}
+
+.menu-footer a {
+  display: block;
+  padding: .5em .5em;
+  color: white;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.menu-footer a:hover {
+  background: #2e4e96;
+}
+
+.menu-footer .icon {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+.menu-footer .icon.left {
+  margin-right: 1rem;
+  float: left;
+}
+
+.menu-footer .icon.right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.menu-footer .activado > a {
+  background: #3a63bd;
+  color: white;
+}
+
+.menu-footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-footer .social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.login h1 {
+  color: #223A6F;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.login .h1-right {
+  text-align: center;
+}
+
+.login h2 {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1;
+  margin-top: 0;
+  position: relative;
+  top: -12px;
+}
+
+.one {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  text-align: end;
+}
+
+.one, .two {
+  padding: 85px;
+  margin: 30px;
+}
+
+.one input, .two input {
+  width: 80%;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  border: 0.5px solid #888888;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.one input.button-yellow, .two input.button-yellow {
+  background: #B27E2C;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  color: white;
+}
+
+.one input.button-yellow:hover, .two input.button-yellow:hover {
+  background: #d09941;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.one hr.center, .two hr.center {
+  width: 80%;
+  margin-right: 0%;
+  margin-top: 30px;
+}
+
+.one [type="checkbox"]:checked + label, .two [type="checkbox"]:checked + label {
+  color: #162648;
+}
+
+.one .checkbox, .two .checkbox {
+  margin: 0 0 1em 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #223A6F;
+}
+
+.one .checkbox:hover, .two .checkbox:hover {
+  color: #223A6F;
+}
+
+.one .checkbox .input-remember, .two .checkbox .input-remember {
+  width: 12px;
+  color: #223A6F;
+  border: 0.5 solid #223A6F;
+}
+
+.one .checkbox label, .two .checkbox label {
+  color: #223A6F;
+  font-size: 14px;
+}
+
+.one .checkbox a, .two .checkbox a {
+  color: #223A6F;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 10rem;
+}
+
+.one button, .two button {
+  width: 83%;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.one button.button-blue, .two button.button-blue {
+  background: #223A6F;
+}
+
+.one button.button-blue:hover, .two button.button-blue:hover {
+  background: #3a63bd;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.one .paragraph, .two .paragraph {
+  display: inline-block;
+  width: 80%;
+}
+
+.one .paragraph .hr-left, .two .paragraph .hr-left {
+  position: relative;
+  margin-left: 0%;
+  margin-right: 65%;
+  top: 23px;
+}
+
+.one .paragraph p, .two .paragraph p {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+
+.one .paragraph .hr-right, .two .paragraph .hr-right {
+  position: relative;
+  margin-left: 64%;
+  margin-right: 0%;
+  top: -18px;
+}
+
+.two {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.two div.city {
+  display: -ms-grid;
+  display: grid;
+}
+
+.two div.city label {
+  margin-right: 31px;
+  color: gray;
+  font-size: 11px;
+}
+
+.two input#advertising, .two input#terms, .two input#comany-singin {
+  width: 12px;
+}
+
+.two label {
+  font-size: 10px;
+  color: gray;
+}
+
+.two label a {
+  color: #223A6F;
+  text-decoration: underline;
+}
+
+.two label.company-singin {
+  color: #223A6F;
+}
+
+.two hr.two-center {
+  width: 80%;
+  margin-left: 0%;
+}
+
+.two input[type="checkbox"] ~ fieldset {
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.two input[type="checkbox"]:checked ~ fieldset {
+  display: block;
+  border: none;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social .social-login .fab {
+  margin: 0;
+  padding: 8px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  margin: 1px 5px;
+  border-radius: 50%;
+}
+
+.social .social-login .fab:hover {
+  opacity: 0.7;
+}
+
+.social .social-login.left {
+  margin-left: 79px;
+}
+
+.social .social-login.left a {
+  color: #7287B3;
+  text-transform: uppercase;
+}
+
+.social .social-login.right {
+  margin-right: 5px;
+}
+
+.social .social-login.right a {
+  color: #DD4B39;
+  text-transform: uppercase;
+}
+
+.social.right {
+  margin-left: -73px;
+  margin-right: 74px;
+}
+
+.fa-facebook-f {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.middle {
+  text-align: center;
+  display: none;
+}
+
+.middle input {
+  width: 70%;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  border: 0.5px solid #888888;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.middle button {
+  width: 13%;
+  text-transform: uppercase;
+  position: relative;
+  left: -9px;
+  line-height: 14px;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  color: white;
+  font-size: 10px;
+  background: #223A6F;
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Source Sans Pro, sans-serif;
+  height: 100%;
+  margin: 0;
+  background: #F2F2F2;
+  position: static;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Source Sans Pro;
+  font-weight: bold;
+  margin: 0;
+}
+
+.banner {
+  height: 65vh;
+}
+
+.banner img {
+  height: 100%;
+}
+
+.banner_bottom {
+  height: 15vh;
+}
+
+main {
+  padding-bottom: 1rem;
+  min-height: calc(100% - 20%);
+  margin: 0 auto -50px;
+}
+
+@media screen and (max-width: 457px) {
+  header {
+    height: 20vh;
+  }
+  header img.licorera_logo {
+    width: 139px;
+  }
+  header .bgnav a {
+    font-size: 0.7rem;
+  }
+  header .menu {
+    position: relative;
+    top: 13px;
+  }
+  header .menu .menu-left li.open-slide {
+    left: 15px;
+  }
+  header .menu ul > li.bar_li {
+    display: none;
+  }
+  header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    left: -10px;
+  }
+  header .menu ul .fal {
+    font-size: 1.4rem;
+    top: 6px;
+  }
+  header .menu .menu-right .menu_title--right {
+    font-size: 0.9rem;
+  }
+  .banner {
+    height: 55vh;
+  }
+  .banner_bottom {
+    height: 28vh;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  a.bgnav_space {
+    display: none;
+  }
+  .menu-right li:first-child {
+    display: none;
+  }
+  header {
+    padding: 0;
+    height: 20vh;
+  }
+  header .side-nav {
+    width: 66vw;
+  }
+  header a.list.--right {
+    float: none;
+  }
+  header .menu {
+    padding: 0;
+  }
+  header .menu .menu-left li:last-child {
+    display: inline-block;
+  }
+  header .menu .bar {
+    display: none;
+  }
+  header .menu .menu-left {
+    top: 0;
+  }
+  header .menu .menu-left .fa-user-circle, header .menu .menu-left .bar {
+    display: none;
+  }
+  header .menu .menu-left .open-slide {
+    top: 4px;
+    left: 21px;
+  }
+  header .menu .menu-left .menu_title {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .menu .menu-left .titleMenu {
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+  }
+  header .menu .menu-right .menu_title--right {
+    display: block;
+  }
+  header .menu .menu_title--left {
+    position: relative;
+    display: none;
+  }
+  header .menu .licorera_logo {
+    max-width: 150px;
+    margin-top: 5px;
+    left: 0;
+  }
+  header .menu_title {
+    font-size: .8rem;
+  }
+  header a.bgnav_space {
+    display: none;
+  }
+  #desktop {
+    display: none;
+  }
+  .login {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .one, .two {
+    padding: 0;
+    margin: auto;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    text-align: center;
+  }
+  .one div.checkbox, .two div.checkbox {
+    margin: 0 0 1em 2em;
+  }
+  .one div.checkbox a, .two div.checkbox a {
+    margin-left: 4rem;
+  }
+  .two div.city label {
+    display: block;
+  }
+  .two .social.right {
+    margin-left: -41px;
+    margin-right: 63px;
+    margin-bottom: 17px;
+  }
+  .two input#citi {
+    margin: auto;
+  }
+  .two hr.two-center {
+    width: 100%;
+  }
+  .one .social .social-login.left {
+    margin-left: 33px;
+  }
+  .one .social .social-login.right {
+    margin-right: 40px;
+  }
+  hr.center {
+    display: none;
+  }
+  div.middle {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  a.bgnav_space {
+    display: none;
+  }
+  .menu-right li:first-child {
+    display: none;
+  }
+  .banner {
+    height: 60vh;
+  }
+  .banner_bottom {
+    height: 17vh;
+  }
+  header {
+    height: 20vh;
+    padding: 0 3px;
+  }
+  header a.list.--right {
+    float: none;
+  }
+  header .side-nav {
+    width: 33vw;
+  }
+  header .side-menu {
+    width: 250px;
+  }
+  header .side-nav .side-menu__bottom {
+    margin-top: 240px;
+  }
+  header .menu .menu-left li:last-child {
+    display: inline-block;
+  }
+  header .menu .bar {
+    display: none;
+  }
+  header .menu .menu-left {
+    top: 0;
+  }
+  header .menu .menu-left .fa-user-circle {
+    display: none;
+  }
+  header .menu .menu-left .menu_title {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .menu .menu-left .titleMenu {
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+  }
+  header .menu .menu-left .open-slide {
+    top: 6px;
+  }
+  header .menu .menu_title--left {
+    display: none;
+  }
+  header .menu .menu-right .menu_title--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  header .menu .licorera_logo {
+    width: 170px;
+    margin-top: 5px;
+    left: 0;
+  }
+  header .menu_title {
+    font-size: .8rem;
+  }
+  header a.bgnav_space {
+    display: none;
+  }
+  #fmobile {
+    display: none;
+  }
+  .login {
+    grid-gap: 2px;
+  }
+  .one, .two {
+    padding: 25px;
+    margin: 10px;
+  }
+  .footer {
+    height: 325px;
+  }
+  .two div.city label {
+    display: block;
+  }
+  .middle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1867px) {
+  .licorera_logo {
+    margin: 2px 0;
+    width: 195px;
+  }
+  #fmobile {
+    display: none;
+  }
+  .footer {
+    height: 260px;
+  }
+  div.middle {
+    display: none;
+  }
+  .bgnav_space {
+    width: 22   0px;
+  }
+}
+
+@media only screen and (min-width: 1870px) and (max-width: 2560px) {
+  header {
+    height: 9vmax;
+  }
+  header .bgnav .bgnav_space {
+    width: 20.5vw;
+  }
+  header .bgnav {
+    height: 39px;
+  }
+  header .bgnav a {
+    font-size: 1.6rem;
+    margin-top: 4px;
+  }
+  header .menu ul a {
+    font-size: 1.2em;
+  }
+  header .menu ul .fal {
+    font-size: 2rem;
+  }
+  header .menu ul .bar {
+    width: 1px;
+  }
+  header .menu span.menu-title {
+    font-size: 0.9rem;
+  }
+  header .menu img.licorera_logo {
+    left: 5vw;
+    width: 14vmax;
+    top: 10px;
+  }
+  header .menu .menu-left {
+    position: relative;
+    left: 50px;
+  }
+  .banner {
+    height: 73vh;
+  }
+  .side-nav .location .location-block .line-btn {
+    width: 21.2vmax;
+  }
+  .side-nav .side-menu__login {
+    margin-top: 1.4vh;
+    padding-left: 2.5vw;
+  }
+  .side-nav .side-menu__login .fal {
+    left: -1vw;
+    font-size: 2rem;
+  }
+  .side-nav .side-menu__login li {
+    padding-right: 12px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

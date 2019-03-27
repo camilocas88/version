@@ -1,0 +1,401 @@
+// / Media Query Mixins
+@media screen and (max-width: 457px) {
+  header {
+
+     
+         height: 20vh;
+     
+
+      img.licorera_logo{
+        width: 139px;
+      }
+      .bgnav{
+        a{
+            font-size: 0.7rem
+        }
+      }
+      .menu{
+        position: relative;
+        top: 13px;
+
+          .menu-left{
+            li.open-slide{
+                left: 15px;
+            }
+          }
+          ul>li.bar_li{
+              display: none;
+          }
+          ul{
+              display: flex;
+              position: relative;
+              left: -10px;
+
+              .fal{
+                  font-size: 1.4rem;
+                  top: 6px;
+              }
+          }
+
+          .menu-right .menu_title--right{
+              font-size: 0.9rem;
+          }
+      }
+  }
+  .banner{
+      height: 55vh;
+  }
+  .banner_bottom{
+      height: 28vh;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+    a.bgnav_space{
+        display: none;
+    }
+    .menu-right{
+        li:first-child{
+            display: none;
+        }
+    }
+
+    header{
+        padding: 0;
+        height: 20vh;
+
+        .side-nav{
+            width: 66vw;
+        }
+        
+        a.list.--right{
+            float: none;
+        }
+        
+        .menu{
+            padding: 0  ;
+
+            .menu-left li:last-child {
+                display: inline-block;
+            }
+
+            .bar{
+                display: none;
+            }
+
+            .menu-left {
+               top: 0;
+                .fa-user-circle, .bar{
+                    display: none;
+                  }
+                .open-slide{
+                    top: 4px;
+                    left: 21px;
+                }
+
+                .menu_title{
+                    position: relative;
+                    display: flex;
+                }
+                .titleMenu{
+                    font-size: 0.8em;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+
+            .menu-right .menu_title--right {
+                display: block; 
+            }
+            
+
+            .menu_title--left{
+                position: relative;
+                display: none;
+            }
+
+            .licorera_logo{
+                max-width: 150px;
+                margin-top: 5px;
+                left: 0;
+            }
+        }
+        .menu_title{
+            font-size: .8rem;
+        }
+
+        a.bgnav_space{
+            display: none;
+        }
+    }
+    #desktop {
+        display: none;
+    }
+
+    .login{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .one, .two {
+        padding: 0;
+        margin: auto;
+        grid-column: 1/1;
+        text-align: center;
+
+        div.checkbox{
+            margin: 0 0 1em 2em;
+
+            a{
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    // .two div.city label {
+    //     display: block;
+    // }
+
+    .two{
+
+        div.city label{
+            display: block;
+        }
+        .social.right {
+            margin-left: -41px;
+            margin-right: 63px;
+            margin-bottom: 17px;
+        }
+
+        input#citi{
+            margin: auto;
+        }
+        hr.two-center {
+            width: 100%
+        }
+    }
+    
+
+    .one{
+        .social .social-login.left {
+            margin-left: 33px;
+        }
+    
+        .social .social-login.right {
+            margin-right: 40px;
+        }
+    }
+
+    hr.center{
+       display: none;
+    }
+
+    div.middle{
+        display: block;
+    }
+    
+}
+
+
+@media only screen and (min-width : 800px) and (max-width : 1024px){
+    
+    a.bgnav_space{
+        display: none;
+    }
+    .menu-right{
+        li:first-child{
+            display: none;
+        }
+    }
+
+    .banner{
+        height: 60vh;
+    }
+    .banner_bottom{
+        height: 17vh;
+    }   
+
+    header{
+        height: 20vh;
+        padding: 0 3px;
+
+        a.list.--right{
+            float: none;
+        }
+
+        .side-nav{
+            width: 33vw;
+        }
+
+        .side-menu{
+            width: 250px;
+        }
+
+        .side-nav .side-menu__bottom {
+            margin-top: 240px;
+        }
+        
+        .menu{
+            .menu-left li:last-child {
+                display: inline-block;
+            }
+            .bar{
+                display: none;
+            }
+            .menu-left {
+                top: 0;
+                .fa-user-circle{
+                    display: none;
+                  }
+
+                  .menu_title{
+                    position: relative;
+                    display: flex;
+                }
+                .titleMenu{
+                    font-size: 0.8em;
+                    position: relative;
+                    top: -5px;
+                }
+                .open-slide{
+                    top: 6px;
+                   }
+            }
+            .menu_title--left{
+                display: none;
+            }
+            .menu-right .menu_title--right {
+                display: flex; 
+                position: relative;
+            }
+            .licorera_logo{
+                width: 170px;
+                margin-top: 5px;
+                left: 0;
+            }
+        }
+        .menu_title{
+            font-size: .8rem;
+        }
+        a.bgnav_space{
+            display: none;
+        }
+    }#fmobile{
+        display: none;
+    }
+
+    .login{
+        grid-gap: 2px;
+    }
+
+    .one, .two {
+        padding: 25px;
+        margin: 10px;
+    }
+    .footer{
+        height: 325px;
+    }
+
+    .two div.city label {
+        display: block;
+    }
+
+    .middle{
+        display: none;
+    }
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1867px){
+        .licorera_logo{
+            margin: 2px 0;
+            width: 195px;
+        }
+
+        #fmobile{
+            display: none;
+        }
+        .footer{
+            height: 260px;
+        }
+
+        div.middle{
+            display: none;
+        }
+        .bgnav_space{
+            width: 22   0px;
+          }
+}   
+
+@media only screen and (min-width : 1870px) and (max-width : 2560px){
+    header{
+        height: 9vmax;
+
+        .bgnav .bgnav_space{
+            width: 20.5vw;
+            // border: 1px springgreen solid;
+        }
+
+        .bgnav {
+            height: 39px;
+            a {
+                font-size: 1.6rem;
+                margin-top: 4px;
+            }
+        }
+        
+        .menu{
+            ul{
+                a{
+                    font-size: 1.2em;
+                }
+                .fal{
+                    font-size: 2rem;
+                }
+
+                .bar{
+                    width: 1px;
+                }
+            }
+
+            span.menu-title{
+                font-size: 0.9rem;
+                
+               }
+            
+            img.licorera_logo{
+                left: 5vw;
+                width: 14vmax;
+                top: 10px;
+            }
+
+            .menu-left{
+                position: relative;
+                left: 50px;
+            }
+        }
+    }
+
+    .banner{
+        height: 73vh;
+    }
+
+    .side-nav .location .location-block .line-btn {
+        width: 21.2vmax;
+    }
+
+    .side-nav{
+        .side-menu__login{
+            margin-top: 1.4vh;
+            padding-left: 2.5vw;
+
+           
+            .fal{
+                left: -1vw;
+                font-size: 2rem;
+            }
+
+            li{
+                padding-right: 12px;
+            }
+        }
+    }
+}   
