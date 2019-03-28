@@ -318,7 +318,11 @@
             height: 39px;
             a {
                 font-size: 1.6rem;
-                margin-top: 4px;
+                margin-top: 2px;
+
+                .fab{
+                    font-size: 1.5rem
+                }
             }
         }
         

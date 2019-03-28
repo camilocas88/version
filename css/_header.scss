@@ -1,14 +1,8 @@
 header {
     background: white;
-    
-
-    
     a{
       color:$primary-color;
     }
-
-    
-
     .menu-btn{
       position: relative;
       left: 2px;
@@ -32,9 +26,6 @@ header {
         }
       }
     }
-
-
-
     .bgnav {
       background-color: #888888;
       display: flex;
@@ -48,13 +39,7 @@ header {
           margin: 0;
           letter-spacing: 2px;
           margin-top: 4px;
-          
 
-          .fal{
-            font-size: 1rem;
-            margin-right: 5px;
-          }
-    
           .fa-whatsapp{
             color: #4FCE5D;
             font-size: 1rem;
@@ -70,7 +55,6 @@ header {
         position: relative;
         top: 2px;
         font-size: x-large;
-          
       }
     }
     .menu{      
@@ -79,13 +63,11 @@ header {
         align-items: center;
         padding: 0 1.5rem;
         height: 76%;
-        
-        
 
         .licorera_logo{
           position: relative;
           width: 17vmax;
-          left: 103px;
+          left: 90px;
           margin: 5px 0;
         }
 
@@ -101,9 +83,6 @@ header {
             position: relative;
             top: 21px;
             margin-right: 10px;
-            
-            
-
             .menu_title{
               // display: flex;
               font-size: 15px;
@@ -165,7 +144,7 @@ header {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
